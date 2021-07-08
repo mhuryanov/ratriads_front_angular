@@ -36,7 +36,7 @@ export class AppComponent implements OnInit, OnDestroy {
     // });
   }
 
-  ngOnInit() {    
+  ngOnInit() {
     this.auth.userAuthState.subscribe((val) => {
       this.isSignedIn = val;
     });
@@ -44,7 +44,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.event$.unsubscribe();
+    // this.event$.unsubscribe();
   }
 
   // Signout

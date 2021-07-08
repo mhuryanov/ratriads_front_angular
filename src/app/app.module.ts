@@ -67,28 +67,28 @@ import { ShareModule } from 'ngx-sharebuttons';
 import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
 import { ShareIconsModule } from 'ngx-sharebuttons/icons';
 
-@NgModule({
-  exports: [
-    MatIconModule,
-    MatListModule,
-    MatSidenavModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatCardModule,
-    MatDialogModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatGridListModule,
-    MatTableModule,
-    CdkTableModule,
-    MatCheckboxModule,
-    MatTabsModule,
-    MatProgressBarModule
-  ],
-  declarations: [
-  ]
-})
-export class MaterialModule { }
+// @NgModule({
+//   exports: [
+//     MatIconModule,
+//     MatListModule,
+//     MatSidenavModule,
+//     MatFormFieldModule,
+//     MatInputModule,
+//     MatCardModule,
+//     MatDialogModule,
+//     MatButtonModule,
+//     MatSelectModule,
+//     MatGridListModule,
+//     MatTableModule,
+//     CdkTableModule,
+//     MatCheckboxModule,
+//     MatTabsModule,
+//     MatProgressBarModule
+//   ],
+//   declarations: [
+//   ]
+// })
+// export class MaterialModule { }
 
 @NgModule({
   declarations: [
@@ -125,11 +125,27 @@ export class MaterialModule { }
   imports: [
     ReactiveFormsModule,
     FormsModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialModule,
+    // MaterialModule,
+    MatIconModule,
+    MatListModule,
+    MatSidenavModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatGridListModule,
+    MatTableModule,
+    CdkTableModule,
+    MatCheckboxModule,
+    MatTabsModule,
+    MatProgressBarModule,
+    //MaterialModule,
     FlexLayoutModule,
     MatTreeModule,
     AngMusicPlayerModule,

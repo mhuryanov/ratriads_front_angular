@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, EventEmitter, Output, Input, ViewEncapsulation } from '@angular/core';
-import './pixie/scripts.min.js';
+// import './pixie/scripts.min.js';
 
 /**
  * pixie-image-editor
@@ -54,10 +54,10 @@ export class PixieImageEditorComponent implements AfterViewInit {
   @Output() save = new EventEmitter<any>();
   getData() {
     return this.pixie.getDataUrl();
-    
+
   }
   constructor() {
-    
+
   }
   ngAfterViewInit() {
     if (this.pixie) {
@@ -214,12 +214,12 @@ export class PixieImageEditorComponent implements AfterViewInit {
         });
       }
     });
-    
+
   }
-  
+
   saveTrigger() {
     var ele = (<HTMLElement>document.querySelector("image-editor toolbar .left toolbar-item:last-child button"));
     ele.click();
   }
-  
+
 }
